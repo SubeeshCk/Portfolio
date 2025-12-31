@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt } from 'react-icons/fa'; // Added Docker/Git for filler if needed
-import { SiMongodb, SiExpress, SiTypescript, SiPostgresql, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiTypescript, SiPostgresql, SiTailwindcss, SiVercel, SiGoogleauthenticator, SiRazorpay } from 'react-icons/si';
 
 const skills = [
     { name: "React", icon: <FaReact />, color: "#61DAFB" },
@@ -12,6 +12,9 @@ const skills = [
     { name: "AWS", icon: <FaAws />, color: "#FF9900" },
     { name: "PostgreSQL", icon: <SiPostgresql />, color: "#4169E1" },
     { name: "Tailwind", icon: <SiTailwindcss />, color: "#06B6D4" },
+    { name: "Vercel", icon: <SiVercel />, color: "#FFFFFF" },
+    { name: "Google Authenticator", icon: <SiGoogleauthenticator />, color: "#4285F4" },
+    { name: "Razorpay", icon: <SiRazorpay />, color: "#3395FF" }
 ];
 
 const MagneticIcon = ({ children, color }) => {
@@ -82,7 +85,7 @@ const TechStack = () => {
                     Tech <span className="text-neon-pink">Arsenal</span>
                 </h2>
                 <p className="text-gray-400 max-w-xl mx-auto">
-                    My clean code is powered by a robust stack of modern technologies.
+                    Writing clean, maintainable code and solving problems efficiently with a strong foundation in DSA.
                 </p>
             </motion.div>
 

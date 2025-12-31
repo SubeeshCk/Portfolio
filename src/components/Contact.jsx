@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaPaperPlane, FaCopy, FaCheck } from 'react-icons/fa';
+import { FaPaperPlane, FaCopy, FaCheck, FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
     const [showForm, setShowForm] = useState(false);
@@ -69,8 +69,33 @@ const Contact = () => {
                                 className="text-left w-full max-w-md mx-auto"
                             >
                                 <p className="text-center text-gray-400 mb-8">
-                                    Send me a message or copy my email below.
+                                    Send me a message, direct call, or copy my email below.
                                 </p>
+
+                                {/* Contact Options Grid */}
+                                <div className="grid grid-cols-2 gap-4 mb-6">
+                                    <motion.a
+                                        href="https://wa.me/919995282040"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        className="flex flex-col items-center justify-center bg-[#25D366]/10 border border-[#25D366]/20 p-4 rounded-xl hover:bg-[#25D366]/20 transition-colors group cursor-pointer"
+                                    >
+                                        <FaWhatsapp size={24} className="text-[#25D366] mb-2" />
+                                        <span className="text-white text-sm font-medium">WhatsApp</span>
+                                    </motion.a>
+
+                                    <motion.a
+                                        href="tel:+919995282040"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        className="flex flex-col items-center justify-center bg-neon-blue/10 border border-neon-blue/20 p-4 rounded-xl hover:bg-neon-blue/20 transition-colors group cursor-pointer"
+                                    >
+                                        <FaPhone size={20} className="text-neon-blue mb-2" />
+                                        <span className="text-white text-sm font-medium">Call Me</span>
+                                    </motion.a>
+                                </div>
 
                                 {/* Direct Email Copy */}
                                 <div className="flex items-center justify-between bg-white/5 p-4 rounded-lg mb-8 border border-white/10">

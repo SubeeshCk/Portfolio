@@ -12,12 +12,9 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/in/subeesh-ck-7a3a86211" className="transform hover:scale-110 transition-transform duration-300 hover:text-neon-pink drop-shadow-[0_0_8px_rgba(249,38,114,0.8)]">
                         <FaLinkedin size={24} />
                     </a>
-                    <a href="#" className="transform hover:scale-110 transition-transform duration-300 hover:text-neon-green drop-shadow-[0_0_8px_rgba(166,226,46,0.8)]">
-                        <FaTwitter size={24} />
-                    </a>
                 </div>
                 <p className="text-sm font-light tracking-wide">
-                    © {new Date().getFullYear()} Subeesh CK. Built with <span className="text-neon-pink">♥</span> & React.
+                    © {new Date().getFullYear()} Subeesh CK | Built with React.
                 </p>
             </div>
         </footer>
