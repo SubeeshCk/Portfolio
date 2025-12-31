@@ -16,11 +16,11 @@ const Contact = () => {
         e.preventDefault();
         const subject = `Portfolio Contact from ${formData.name}`;
         const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
-        window.location.href = `mailto:subeeshck3@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:subeeshck.dev@gmail.com?subject=${subject}&body=${body}`;
     };
 
     const copyEmail = () => {
-        navigator.clipboard.writeText("subeeshck3@gmail.com");
+        navigator.clipboard.writeText("subeeshck.dev@gmail.com");
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
@@ -74,7 +74,7 @@ const Contact = () => {
 
                                 {/* Direct Email Copy */}
                                 <div className="flex items-center justify-between bg-white/5 p-4 rounded-lg mb-8 border border-white/10">
-                                    <span className="text-gray-300 font-mono text-sm truncate mr-4">subeeshck3@gmail.com</span>
+                                    <span className="text-gray-300 font-mono text-sm truncate mr-4">subeeshck.dev@gmail.com</span>
                                     <button
                                         onClick={copyEmail}
                                         className="text-neon-blue hover:text-white transition-colors"
