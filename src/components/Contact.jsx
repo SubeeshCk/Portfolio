@@ -16,11 +16,11 @@ const Contact = () => {
         e.preventDefault();
         const subject = `Portfolio Contact from ${formData.name}`;
         const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
-        window.location.href = `mailto:subeeshck@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:subeeshck3@gmail.com?subject=${subject}&body=${body}`;
     };
 
     const copyEmail = () => {
-        navigator.clipboard.writeText("subeeshck@gmail.com");
+        navigator.clipboard.writeText("subeeshck3@gmail.com");
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
