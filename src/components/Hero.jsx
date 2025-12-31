@@ -15,7 +15,7 @@ const Hero = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <h2 className="text-neon-green font-mono text-lg mb-2 pl-1">
-                            &lt;Hello /&gt; I am
+                            Hello, I am
                         </h2>
                         <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 tracking-tighter drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
                             Subeesh <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">CK</span>
