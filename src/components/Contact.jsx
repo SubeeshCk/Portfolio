@@ -4,7 +4,7 @@ import { FaPaperPlane, FaCopy, FaCheck, FaWhatsapp, FaPhone } from 'react-icons/
 
 const Contact = () => {
     const [showForm, setShowForm] = useState(false);
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [formData, setFormData] = useState({ name: '', message: '' });
     const [copied, setCopied] = useState(false);
 
     const handleInputChange = (e) => {
@@ -15,7 +15,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const subject = `Portfolio Contact from ${formData.name}`;
-        const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+        const body = `Name: ${formData.name}\n\nMessage:\n${formData.message}`;
         window.location.href = `mailto:subeeshck.dev@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     };
 
@@ -121,17 +121,7 @@ const Contact = () => {
                                             className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-neon-blue transition-colors"
                                         />
                                     </div>
-                                    <div>
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            placeholder="Your Email"
-                                            required
-                                            value={formData.email}
-                                            onChange={handleInputChange}
-                                            className="w-full bg-black/20 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-neon-blue transition-colors"
-                                        />
-                                    </div>
+
                                     <div>
                                         <textarea
                                             name="message"
