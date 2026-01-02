@@ -68,12 +68,12 @@ const ProjectCard = ({ project, index }) => {
   const rotateX = useTransform(
     mouseYSpring,
     [-0.5, 0.5],
-    ["17.5deg", "-17.5deg"]
+    ["12deg", "-12deg"]
   );
   const rotateY = useTransform(
     mouseXSpring,
     [-0.5, 0.5],
-    ["-17.5deg", "17.5deg"]
+    ["-12deg", "12deg"]
   );
 
   const handleMouseMove = (e) => {
@@ -120,7 +120,7 @@ const ProjectCard = ({ project, index }) => {
       >
         {/* Gradient Glow Background on Hover */}
         <div
-          className={`absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 bg-gradient-to-br ${project.color}`}
+          className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-br ${project.color}`}
           style={{ transform: "translateZ(-50px)" }}
         ></div>
 

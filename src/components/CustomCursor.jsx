@@ -51,7 +51,11 @@ const CustomCursor = () => {
                 <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
 
                 {/* Outer Glow Ring */}
-                <div className="absolute inset-0 border border-neon-blue rounded-full opacity-50 animate-pulse-slow shadow-[0_0_20px_rgba(102,217,239,0.3)]" />
+                <motion.div
+                    animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute inset-0 border border-neon-blue rounded-full shadow-[0_0_15px_rgba(102,217,239,0.2)]"
+                />
             </div>
         </motion.div>
     );
