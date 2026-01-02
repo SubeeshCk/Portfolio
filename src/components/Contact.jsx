@@ -15,8 +15,8 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const subject = `Portfolio Contact from ${formData.name}`;
-        const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
-        window.location.href = `mailto:subeeshck.dev@gmail.com?subject=${subject}&body=${body}`;
+        const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+        window.location.href = `mailto:subeeshck.dev@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     };
 
     const copyEmail = () => {
